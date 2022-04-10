@@ -1,0 +1,153 @@
+#hero{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1140px;
+    gap: 80px;
+}
+/*################# caja izquierda hero #################*/
+.hero_lb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15%;
+    min-height: 80vh;
+    width: 70%;
+}
+.hero_lb_top textarea{
+    background-color: var(--gris-principal);
+    border: 0;
+    color: var(--azul-principal);
+    font-size: 32px;
+    line-height: 150%;
+    margin-top: 2.5em;
+    width: 100%;
+}
+.hero_lb_top textarea::placeholder{
+    color: var(--azul-principal);
+}
+.hero_lb_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*caja acción*/
+.hero_lb_bottom p {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.hero_lb_bottom p::before{
+    content: url('/assets/alerta.png');
+    margin-right: 0.5em;
+}
+.hero_lb_bottom .action{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+    margin: 16px 0;
+    width: 100%;
+}
+.btn{
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 67px;
+    line-height: 19px;
+    padding: 24px;
+    width: 100%;
+    transition: all ease-in-out .1s;
+}
+.btn-classic{
+    background-color: var(--azul-principal);
+    color: var(--color-white);
+    border: 1px solid var(--gris-principal);
+}
+.btn-secondary{
+    background-color: var(--gris-secundario);
+    color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
+}
+.btn-classic:hover, .btn-secondary:hover{
+    background-color: var(--color-white);
+    color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
+}
+
+/*################# caja derecha hero #################*/
+.hero_rb{
+    background-color: var(--color-white);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px;
+    width: calc(30% - 32px);
+}
+.hero_rb h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 8px 0;
+    text-align: center;
+}
+.hero_rb h4{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 8px 0;
+    text-align: center;
+}
+
+/*################# media querys #################*/
+
+@media screen and (max-width: 1140px) {
+    #hero{
+        gap: 14px;
+        justify-content: space-between;
+        margin: 0 16px;
+        width: calc(100% - 32px);
+    }
+    .hero_lb{
+        margin-left: 0;
+        width: calc(60% - 39px);
+    }
+    .hero_rb{
+        padding: 0 16px;
+        width: calc(40% - 55px);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #hero{
+        flex-direction: column;
+    }
+    .hero_lb{
+        width: 100%;
+    }
+    .hero_rb{
+        width: 100%;
+        padding: 16px;
+    }
+    .hero_rb img{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hero_lb_top textarea{
+        margin-top: 1em;
+    }
+    .hero_lb_bottom .action{
+        flex-direction: column;
+    }
+    .hero_rb img{
+        display: none;
+    }
+}

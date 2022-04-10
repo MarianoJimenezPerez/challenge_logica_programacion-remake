@@ -1,0 +1,21 @@
+#mainHeader{
+    width: 1140px;
+    margin: 10px auto;
+}
+.main_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.main_nav a{
+    margin: 0 32px;
+}
+
+@media screen and (max-width: 1140px){
+    #mainHeader{
+        width: calc(100% - 32px);
+    }
+    .main_nav a{
+        margin: 0 16px;
+    }
+}

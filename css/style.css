@@ -1,5 +1,35 @@
-*{
+/*-------------REQUIRES-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/*-------------RESETS-------------*/
+
+*, *::before, *::after, *:focus{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+}
+
+/*-------------VARS------------*/
+
+:root{
+    --gris-principal: #F3F5FC;
+    --gris-secundario: #D8DFE8;
+    --negro-texto: #343A40;
+    --azul-principal: #0A3871;
+    --negro-texto-secundario: #495057;
+    --color-white: #ffffff;
+}
+
+/*-------------LABELS------------*/
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--negro-texto);
+    background-color: var(--gris-principal);
+}
+footer{
+    text-align: center;
 }
