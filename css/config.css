@@ -30,6 +30,3 @@ body{
     color: var(--negro-texto);
     background-color: var(--gris-principal);
 }
-footer{
-    text-align: center;
-}

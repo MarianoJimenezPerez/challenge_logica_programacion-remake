@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/config.css">
     <link rel="stylesheet" href="/css/header/header.css">
     <link rel="stylesheet" href="/css/hero/hero.css">
+    <link rel="stylesheet" href="/css/mainFooter/mainFooter.css">
     <title>Challenge logica de programacion remake</title>
 </head>
 <body>
@@ -20,15 +21,15 @@
     <section id="hero">
         <div class="hero_lb">
             <div class="hero_lb_top">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <textarea name="" id="inputText" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             </div>
             <div class="hero_lb_bottom">
                 <p class="alert">
                     Solo letras minúsculas y sin acentos
                 </p>
                 <div class="action">
-                    <button class="btn btn-classic">Encriptar</button>
-                    <button class="btn btn-secondary">Desencriptar</button>
+                    <button id="btn_encriptar" class="btn btn_classic">Encriptar</button>
+                    <button id="btn_desencriptar" class="btn btn_secondary">Desencriptar</button>
                 </div>
             </div>
         </div>
@@ -36,17 +37,20 @@
             <img src="/assets/personaje.png" alt="">
             <h2>Ningún mensaje fué encontrado</h2>
             <h4>Ingresa el texto que desees encriptar o desencriptar.</h4>
+            <textarea id="resultado"></textarea>
+            <button class="btn btn_copiar">Copiar</button>
         </div>
     </section>
-    <footer>
+    <footer id="mainFooter">
         <p>Derechos reservados a: <b>Mariano Jiménez Pérez</b></p>
-        <div class="social-media">
+        <div class="social_media">
             <a href="https://www.instagram.com/mariaanojp/"><i class="fab fa-instagram icon" alt="linkedin-mariano"></i></a>  
             <a href="https://www.linkedin.com/in/marianojimenezperez-latamly/"><i class="fab fa-linkedin-in icon" alt="instagram-mariano"></i></a>
             <a href="mailto:marianojimenezperez1@gmail.com"><i class="fas fa-envelope-square icon" alt="email-mariano"></i></a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/883e39d319.js" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/encriptar.js"></script>
+    <script src="/js/desencriptar.js"></script>
 </body>
 </html>

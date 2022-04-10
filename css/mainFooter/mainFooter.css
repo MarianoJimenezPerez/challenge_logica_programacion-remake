@@ -1,0 +1,15 @@
+#mainFooter{
+    margin: 16px;
+    text-align: center;
+}
+.social_media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 16px auto;
+    width: 200px;
+}
+.social_media a i{
+    color: var(--azul-principal);
+    font-size: 40px;
+}
