@@ -48,7 +48,7 @@
 
 }
 .hero_lb_bottom p::before{
-    content: url('/assets/alerta.png');
+    content: url('./assets/alerta.png');
     margin-right: 0.5em;
 }
 .hero_lb_bottom .action{
